@@ -1,0 +1,16 @@
+micronaut:
+  h2:
+    console.enabled: true
+
+datasources:
+  default:
+    username: url-shortener
+    url: jdbc:h2:mem:url-shortener
+    driverClassName: org.h2.Driver
+    password: short123
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create-drop

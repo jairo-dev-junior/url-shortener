@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: url-shortener
+datasources:
+  default:
+    driver-class-name: org.postgresql.Driver
+    db-type: postgres
+    dialect: POSTGRES
+    url: jdbc:postgresql://localhost:9000/url-shortener
+    username: url-shortener
+    password: short123
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update

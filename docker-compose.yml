@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  app:
+    image: url-shortner:latest
+
+  db:
+    image: postgres
+    restart: always
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    ports:
+      - "9000:5432"
+    # or set shared memory limit when deploy via swarm stack
+    #volumes:
+    #  - type: tmpfs
+    #    target: /dev/shm
+    #    tmpfs:
+    #      size: 134217728 # 128*2^20 bytes = 128Mb
+    environment:
+      POSTGRES_PASSWORD: short123
+      POSTGRES_USER: url-shortener
+      POSTGRES_DB: url-shortener
