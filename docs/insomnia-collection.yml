@@ -1,0 +1,151 @@
+_type: export
+__export_format: 4
+__export_date: 2024-12-29T08:48:02.120Z
+__export_source: insomnia.desktop.app:v0.2.3-a
+resources:
+  - _id: req_649c85b0d52d4931aa6ea9bf28e5c8f2
+    parentId: fld_86ecae27a6644b0f8e7816f85e448f4e
+    modified: 1735460389409
+    created: 1735460374832
+    url: localhost:8080/shorten/gmail-1735460384545
+    name: New Request
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnium/0.2.3-a
+    authentication: {}
+    metaSortKey: -1735460374832
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    segmentParams: []
+    _type: request
+  - _id: fld_86ecae27a6644b0f8e7816f85e448f4e
+    parentId: wrk_921aa8966e7a4fb181309763c56ef8c9
+    modified: 1735459346626
+    created: 1735459346626
+    name: url-shortener
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1735459346626
+    _type: request_group
+  - _id: wrk_921aa8966e7a4fb181309763c56ef8c9
+    parentId: null
+    modified: 1730608207389
+    created: 1730608207389
+    name: My Collection
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_44b654cb399d46ea9e36d3b716f06592
+    parentId: fld_86ecae27a6644b0f8e7816f85e448f4e
+    modified: 1735460203313
+    created: 1735459358081
+    url: localhost:8080/shorten/
+    name: New Request
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"url":"www.gmail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnium/0.2.3-a
+    authentication: {}
+    metaSortKey: -1735459358081
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    segmentParams: []
+    _type: request
+  - _id: req_bae84703919245d5b2574ab07ebb5a57
+    parentId: fld_86ecae27a6644b0f8e7816f85e448f4e
+    modified: 1735460281659
+    created: 1735460179497
+    url: localhost:8080/shorten/gmail-1735460161301
+    name: update route
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"url":"www.gmail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnium/0.2.3-a
+    authentication: {}
+    metaSortKey: -1735459358031
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    segmentParams: []
+    _type: request
+  - _id: req_6bf56f3e2b324207bb843590a8617d46
+    parentId: fld_86ecae27a6644b0f8e7816f85e448f4e
+    modified: 1735460327635
+    created: 1735460299905
+    url: localhost:8080/shorten/google-1735460030598
+    name: delete route
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnium/0.2.3-a
+    authentication: {}
+    metaSortKey: -1735459357981
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    segmentParams: []
+    _type: request
+  - _id: env_406b54b7dbb34f8093aed9710088a526
+    parentId: wrk_921aa8966e7a4fb181309763c56ef8c9
+    modified: 1730608206388
+    created: 1730608206388
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1730608206388
+    _type: environment
+  - _id: jar_025a04c6ed174cbca6c617a10ff43b45
+    parentId: wrk_921aa8966e7a4fb181309763c56ef8c9
+    modified: 1730608207388
+    created: 1730608207388
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
